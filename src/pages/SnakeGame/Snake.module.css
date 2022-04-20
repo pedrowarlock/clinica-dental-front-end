@@ -1,0 +1,19 @@
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: black; */
+    height: 80vh;
+}
+
+.snk_content{
+    border-radius: 10px;
+    display: grid;
+    width: 30vw;
+    height: 30vw;
+    background-color: rgb(106, 120, 241);
+    overflow: hidden;
+}
+

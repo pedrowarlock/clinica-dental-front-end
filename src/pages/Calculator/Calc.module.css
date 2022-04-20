@@ -1,0 +1,31 @@
+.content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.calculator{
+    width: 200px;
+    display: grid;
+    grid-template-areas:
+    "7 8 9 9"
+    "4 5 6 6"
+    "1 2 3 3"
+    "1 2 3 3";
+}
+
+.digit{
+    text-align: right;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.BtNumber{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: aliceblue;
+}
