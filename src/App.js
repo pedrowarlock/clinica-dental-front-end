@@ -23,8 +23,9 @@ function App() {
     <div className='APP'>
       <Router>
           <aside id={openMenuIndex ? "toggleSideBar" : ""}><SideBar /></aside>
-          <main>
-            <header><Header toggleMenu={ToggleMenuSide}/></header>
+          <main id={openMenuIndex ? "toggleContent" : ""}>
+             <header><Header toggleMenu={ToggleMenuSide}/></header>
+            
             <div className="page-content">
               <Routes>
                 <Route path="/" element={<Portfolio />} />

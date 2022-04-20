@@ -26,11 +26,17 @@ a {
 }
 
 main {
-    width: 100%;
+    width: calc(100vw - 275px);
+    transition: width var(--side-transition-time);   
+}
+
+#toggleContent{
+    width: 100vw;
 }
 
 aside {
     width: var(--side-bar-full-size);
+    height: 100vh;
     transition: width var(--side-transition-time);
     grid-area: main;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
@@ -47,13 +53,13 @@ aside {
     min-height: var(--page-content-size);
     background-color: var(--page-content-color);
     padding: var(--content-padding);
+   
 }
 
 header {
     background-color: var(--header-color);
     height: var(--header-size);
     max-height: var(--header-size);
-    grid-area: header;
 
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -70,5 +76,4 @@ footer {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border-top: 1px solid var(--border-color);
-    grid-area: footer;
 }
