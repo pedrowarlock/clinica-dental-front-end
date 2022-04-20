@@ -34,7 +34,7 @@ function App() {
   )
 }
 
-
+//vou arrumar daq a pouco quando eu voltar da academia
 function TempRouter() {
   return (
     <Routes>
