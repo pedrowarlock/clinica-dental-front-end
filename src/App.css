@@ -1,5 +1,5 @@
 :root {
-    --side-bar-full-size: 275px;
+    --side-bar-full-size: 250px;
     --side-transition-time: 300ms;
     --content-padding: 16px;
     --footer-size: 56px;
@@ -26,7 +26,7 @@ a {
 }
 
 main {
-    width: calc(100vw - 275px);
+    width: calc(100vw - var(--side-bar-full-size));
     transition: width var(--side-transition-time);   
 }
 

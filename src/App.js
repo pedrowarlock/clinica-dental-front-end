@@ -2,11 +2,8 @@ import './Reset.css';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
-import Snake from './pages/SnakeGame/Snake'
-import Portfolio from './pages/Profile/Portfolio'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
-import Calculadora from './pages/Calculator/calculator'
 import SideBar from './components/SideBar/SideBar';
 
 function App() {
@@ -25,7 +22,7 @@ function App() {
           <header><Header toggleMenu={ToggleMenuSide} /></header>
 
           <div className="page-content">
-            <TempRouter />
+            {/* <TempRouter /> */}
           </div>
           <footer><Footer /></footer>
         </main>
@@ -34,15 +31,6 @@ function App() {
   )
 }
 
-//vou arrumar daq a pouco quando eu voltar da academia
-function TempRouter() {
-  return (
-    <Routes>
-      <Route path="/" element={<Portfolio />} />
-      <Route path="/calculadora" element={<Calculadora />} />
-      <Route path="/snake" element={<Snake />} />
-    </Routes>
-  )
-}
+
 
 export default App;

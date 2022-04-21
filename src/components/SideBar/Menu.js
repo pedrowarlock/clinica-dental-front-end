@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom"
 import { useState } from 'react'
 
 //Date
-import { SidebarDate } from './SidebarDate';
+import { SidebarDate } from '../../config/SidebarDate';
 
 //icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
